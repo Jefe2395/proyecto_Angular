@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import {Cliente} from '../app/Model/Cliente'
+import {Cliente} from '../app/Model/Cliente';
+import {MensajesService} from '../app/mensajes.service';
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +8,7 @@ import {Cliente} from '../app/Model/Cliente'
 export class ClienterestService {
 
   arrayCliente : Cliente[];
-  constructor(priavte mensajes: MensajesService) { }
+  constructor(private mensajes: MensajesService) { }
 
   getClientes(): Cliente[]
   {

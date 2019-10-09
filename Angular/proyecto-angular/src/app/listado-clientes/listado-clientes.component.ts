@@ -14,7 +14,7 @@ export class ListadoClientesComponent implements OnInit {
 
   ngOnInit() {
     // this.heroes = HEROES;
-    this.clientes = this.clienteRest.();
+   // this.clientes = this.clienteRest.();
   }
   /*onSelect(hero: Hero): void {
     this.selectedHero = hero;
