@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Cliente } from '../Model/Cliente';
 import { ClienterestService } from '../clienterest.service';
+import { CLIENTES } from '../Model/arrayClientes';
 
 @Component({
   selector: 'app-listado-clientes',
@@ -13,7 +14,7 @@ export class ListadoClientesComponent implements OnInit {
   constructor(private clienteRest: ClienterestService) { }
 
   ngOnInit() {
-    // this.heroes = HEROES;
+   this.clientes = CLIENTES;
    // this.clientes = this.clienteRest.();
   }
   /*onSelect(hero: Hero): void {

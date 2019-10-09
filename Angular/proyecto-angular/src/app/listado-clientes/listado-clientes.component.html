@@ -1,1 +1,7 @@
-<p>listado-clientes works!</p>
+<div *ngIf="clientes.length">
+    <div *ngFor='let cliente of clientes' class="alert alert-primary" role="alert">
+        <app-formulario></app-formulario>
+        <hr>
+    </div>
+</div>
+
