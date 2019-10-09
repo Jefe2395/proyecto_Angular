@@ -8,6 +8,8 @@ import { FormularioComponent } from './formulario/formulario.component';
 import { ListadoClientesComponent } from './listado-clientes/listado-clientes.component';
 import { RegistroComponent } from './registro/registro.component';
 import { MensajesComponent } from './mensajes/mensajes.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { MensajesComponent } from './mensajes/mensajes.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

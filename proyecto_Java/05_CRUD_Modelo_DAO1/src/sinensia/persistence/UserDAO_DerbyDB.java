@@ -18,7 +18,7 @@ import sinensia.model.User;
  */
 public class UserDAO_DerbyDB implements IUserDAO {
 
-    private static final String CONEX_DB = "jdbc:derby://localhost:1527/db_user";
+    private static final String CONEX_DB = "jdbc:derby://localhost:1527/db_users";
     private static final String USER_DB = "root";
     private static final String PWD_DB = "1234";
 

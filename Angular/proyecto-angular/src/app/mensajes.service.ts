@@ -10,6 +10,7 @@ export class MensajesService {
 	constructor() { }
 
 	add(mensaje: string): void {
+		this.mensajes = [];
 		this.mensajes.push(mensaje);
 	}
 }

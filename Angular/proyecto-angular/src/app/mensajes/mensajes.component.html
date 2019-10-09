@@ -1,4 +1,4 @@
-<div *ngIf="mensajesService.mensajes.length">
+<div *ngIf="mensajesService.mensajes !== undefined">
     <div *ngFor='let mensaje of mensajesService.mensajes' class="alert alert-primary" role="alert">
         {{mensaje}}
     </div>
